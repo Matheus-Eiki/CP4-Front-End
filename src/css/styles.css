@@ -1,0 +1,61 @@
+/*reset css*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*criando variáveis para as cores*/
+:root{
+    --bg-color: #F3EFF5;
+    --dark-color: #0D0A0B;
+    --mid-color: #454955;
+    --green-light: #72B01D;
+    --dark-green: #3F7D20;
+}
+
+
+/*header*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    font-size: 1rem;
+    background-color: var(--mid-color);
+}
+
+header img{
+    width: 10%;
+    margin-right: 2rem;
+}
+
+.c-header{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-header nav ul{
+    display: flex;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.c-header nav ul li a{
+    color: var(--dark-color);
+}
+
+.c-header a:hover, .c-header a.active{
+    color: var(--dark-green);
+    border-bottom: 3px solid var(--dark-green);
+    transition: all 0.1s;
+}
+
+.c-header img{
+    width: 10%;
+}
