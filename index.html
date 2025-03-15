@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,9 +17,25 @@
     <header>
         <!-- Adcicionar depois a header-->
     </header>
-    
+
+    <!-- Estrutura do carousel -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel"> <!--data-bs-ride="carousel" permite o slide passar automaticamente-->
+        <!-- Início do slide do carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active " data-bs-interval="3000">  <!--data-bs-interval= definir o tempo de mudar para o próximo slide-->
+                <img src="..." class="d-block w-100" alt="Não foi possivel carregar a img1">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="..." class="d-block w-100" alt="Não foi possivel carregar a img2">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="..." class="d-block w-100" alt="Não foi possivel carregar a img3">
+            </div>
+        </div>
+    </div>
 
     <!-- Importando o Script do Bootstrap (JavaScript) via CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
+
 </html>
