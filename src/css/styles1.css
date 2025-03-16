@@ -3,6 +3,14 @@ body {
     background-color: #f4f4f4;
     color: #333;
   }
+/*criando variáveis para as cores*/
+:root{
+  --bg-color: #DAD7CD;
+  --dark-color: #344E41;
+  --mid-color: #A3B18A;
+  --green-light: #588157;
+  --dark-green: #3A5A40;
+}
   
   .card img {
     max-width: 100%;
@@ -95,4 +103,33 @@ body {
     transform: scale(1.2);
   }
   
+/*rodape*/
+.rodape{
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--mid-color);
+  padding-top: px;
+}
+
+.rodape a{
+  color: var(--green-light);
+  transition: all 0.5s ease;
+}
+
+.rodape a:hover{
+  color: var(--dark-green);
+}
+
+.rodape h4{
+  color: var(--bg-color);
+}
+
+.rodape img{
+  margin-right: 10px;
+  width: 20px;
+}
+
+.c-left, .c-right{
+  margin-top: 10%;
+}
   
