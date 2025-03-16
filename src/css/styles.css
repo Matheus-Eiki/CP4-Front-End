@@ -24,7 +24,7 @@ body{
 
 /*header*/
 header #logo-header{
-    width: 25%;
+    width: 5%;  /*Mudando tamanho da logo para a nova header*/
 }
 
 header nav{
