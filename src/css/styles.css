@@ -10,11 +10,11 @@
 
 /*criando variáveis para as cores*/
 :root{
-    --bg-color: #F3EFF5;
-    --dark-color: #0D0A0B;
-    --mid-color: #454955;
-    --green-light: #72B01D;
-    --dark-green: #3F7D20;
+    --bg-color: #DAD7CD;
+    --dark-color: #344E41;
+    --mid-color: #A3B18A;
+    --green-light: #588157;
+    --dark-green: #3A5A40;
 }
 
 body{
@@ -45,26 +45,39 @@ header #carrinho{
 }
 
 .efeitolink{
-    color: var(--green-light) !important;
+    color: var(--dark-green) !important;
     font-weight: 400;
     border-bottom: 3px solid transparent var(--green-light);    
 }
 
 .efeitolink:hover, .efeitolink.a{
-    border-bottom: 3px solid var(--green-light);
+    border-bottom: 3px solid var(--dark-green);
     transition: all 0.1s ease;
 }
 
 
 /*card produto*/
 .c-card-produto{
+    display: flex;
     padding: 50px;
 }
 
 .card-produto{
-    display: flex;
+    text-align: center;
     padding: 20px;
 }
+
+#prod1{
+    width: 40%;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+#valor-produto{
+    margin-top: 30px;
+}
+
+
 
 
 /*rodape*/
