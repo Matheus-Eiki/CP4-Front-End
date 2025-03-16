@@ -1,29 +1,34 @@
-/* Estilo geral do body */
+:root {
+    --bg-color: #f0f0f0; /* Definindo a cor do fundo */
+    --green-light: #6fbb60;
+    --mid-color: #3c6e47;
+    --dark-green: #2c4f2d;
+}
+
 body {
     background-color: var(--bg-color);
-    margin: 0; /* Remove margens padrão */
+    margin: 0;
 }
 
-/* Ajustes para centralizar o formulário */
 .main-content {
     display: flex;
-    justify-content: center; /* Alinha o conteúdo horizontalmente */
-    align-items: center; /* Alinha o conteúdo verticalmente */
-    min-height: 70vh; /* Faz o body ocupar toda a altura da tela */
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
 }
 
-/* Estilos para o contêiner do formulário */
 .gridcontainer {
     display: grid;
-    grid-template-columns: 1fr 3fr; /* Ajuste o layout das colunas */
-    grid-template-rows: 20px 20px 20px 100px 40px; /* Ajuste das linhas */
-    margin: 0 auto; /* Centraliza o formulário */
-    grid-gap: 20px; /* Espaço entre os campos */
-    padding: 20px; /* Adiciona padding interno */
-    background-color: #09d42b00; /* Fundo branco para o formulário */
-    border-radius: 8px; /* Bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 20px 20px 20px 100px 40px;
+    margin: 0 auto;
+    grid-gap: 20px;
+    padding: 20px;
+    background-color: #ffffff; /* Fundo sem transparência */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 /* Estilos para os campos de entrada */
 #nome, #email, #assunto {
@@ -46,7 +51,8 @@ body {
     background-color: var(--green-light);
     color: rgb(0, 0, 0);
     padding: 10px 20px;
-    border: none;
+    border: 2px;
+    border-color: rgb(0, 0, 0);
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -89,8 +95,12 @@ header nav {
 .rodape {
     display: flex;
     justify-content: space-around;
+    align-items: center; /* Alinha o conteúdo verticalmente */
     background-color: var(--mid-color);
-    padding: 10px 0; /* Adiciona padding no rodapé */
+    padding: 5px 0; /* Menor padding */
+    min-height: 10px; /* Garantir altura mínima */
+    margin-bottom: 0;
+    height: 225px;
 }
 
 .rodape a {
@@ -112,7 +122,7 @@ header nav {
 }
 
 .c-left, .c-right {
-    margin-top: 10%; /* Ajuste no espaçamento */
+    margin-top: 0; /* Remover margens extras */
 }
 
 /* Estilos para os campos do formulário */
