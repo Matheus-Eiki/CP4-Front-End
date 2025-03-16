@@ -1,89 +1,130 @@
+/* Estilo geral do body */
+body {
+    background-color: var(--bg-color);
+    margin: 0; /* Remove margens padrão */
+}
+
+/* Ajustes para centralizar o formulário */
+.main-content {
+    display: flex;
+    justify-content: center; /* Alinha o conteúdo horizontalmente */
+    align-items: center; /* Alinha o conteúdo verticalmente */
+    min-height: 70vh; /* Faz o body ocupar toda a altura da tela */
+}
+
+/* Estilos para o contêiner do formulário */
 .gridcontainer {
     display: grid;
-    grid-template-columns: 1fr 125fr;
-    grid-template-rows: 20px 20px 20px 100px 40;
-    max-width: 600px;
-    margin: 0 auto;
-    grid-gap: 10px;
+    grid-template-columns: 1fr 3fr; /* Ajuste o layout das colunas */
+    grid-template-rows: 20px 20px 20px 100px 40px; /* Ajuste das linhas */
+    margin: 0 auto; /* Centraliza o formulário */
+    grid-gap: 20px; /* Espaço entre os campos */
+    padding: 20px; /* Adiciona padding interno */
+    background-color: #09d42b00; /* Fundo branco para o formulário */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
-#nome {
-    width: 200px;
+
+/* Estilos para os campos de entrada */
+#nome, #email, #assunto {
+    width: 100%; /* Faz os campos de entrada ocuparem toda a largura */
 }
-#email {
-    width: 200px;
-}
-#assunto {
-    width: 200px;
-}
-#mensagem{
+
+/* Estilos para a textarea */
+#mensagem {
     width: 100%;
     height: 80px;
     padding: 10px;
     font-size: 16px;
-    resize: vertical; /* Permite o redimensionamento vertical */
+    resize: vertical; /* Permite redimensionar verticalmente */
     border: 1px solid #ccc;
     border-radius: 5px;
-  }
-
-#submit{
- align-content: center;
-}
-body{
-    background-color: var(--bg-color);
 }
 
-
-/*header*/
-header #logo-header{
-    width: 25%;
+/* Estilo do botão de envio */
+#btn-submit {
+    background-color: var(--green-light);
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-header nav{
+#btn-submit:hover {
+    background-color: var(--dark-green);
+}
+
+/* Estilos para o header */
+header #logo-header {
+    width: 25%; /* Ajusta o tamanho do logo */
+}
+
+header nav {
     background-color: var(--mid-color);
 }
-.navbar-nav .nav-item{
-    margin-right: 6rem;
+
+.navbar-nav .nav-item {
+    margin-right: 6rem; /* Ajuste no espaçamento entre os itens */
 }
 
-.navbar-nav .nav-link{
-    white-space: nowrap; /*evitando quebra de linha*/
+.navbar-nav .nav-link {
+    white-space: nowrap; /* Evita quebra de linha */
 }
 
-.efeitolink{
+/* Estilo para o link do menu */
+.efeitolink {
     color: var(--green-light) !important;
     font-weight: 400;
-    border-bottom: 3px solid transparent var(--green-light);    
+    border-bottom: 3px solid transparent var(--green-light);
 }
 
-.efeitolink:hover, .efeitolink.a{
+.efeitolink:hover, .efeitolink.a {
     border-bottom: 3px solid var(--green-light);
     transition: all 0.1s ease;
 }
-/*rodape*/
-.rodape{
+
+/* Estilos para o rodapé */
+.rodape {
     display: flex;
     justify-content: space-around;
     background-color: var(--mid-color);
+    padding: 10px 0; /* Adiciona padding no rodapé */
 }
 
-.rodape a{
+.rodape a {
     color: var(--green-light);
     transition: all 0.5s ease;
 }
 
-.rodape a:hover{
+.rodape a:hover {
     color: var(--dark-green);
 }
 
-.rodape h4{
+.rodape h4 {
     color: var(--bg-color);
 }
 
-.rodape img{
+.rodape img {
     margin-right: 10px;
     width: 20px;
 }
 
-.c-left, .c-right{
-    margin-top: 10%;
+.c-left, .c-right {
+    margin-top: 10%; /* Ajuste no espaçamento */
+}
+
+/* Estilos para os campos do formulário */
+.gridcontainer label {
+    font-weight: bold;
+}
+
+.gridcontainer input[type="text"], 
+.gridcontainer input[type="email"], 
+.gridcontainer textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
