@@ -5,10 +5,10 @@ body {
 .gridcontainer {
     display: grid;
     grid-template-columns: 1fr 125fr;
-    grid-template-rows: 20px 20px 20px 100px;
+    grid-template-rows: 20px 20px 20px 100px 40;
     max-width: 600px;
     margin: 0 auto;
-    grid-gap: 2cap;
+    grid-gap: 10px;
 }
 #nome {
     width: 200px;
@@ -21,7 +21,7 @@ body {
 }
 #mensagem{
     width: 100%;
-    height: 150px;
+    height: 80px;
     padding: 10px;
     font-size: 16px;
     resize: vertical; /* Permite o redimensionamento vertical */
