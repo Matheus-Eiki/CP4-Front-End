@@ -4,8 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
+    <link rel ="stylesheet" href="./src/css/styles.css">
 </head>
 <body>
-    
+    <div class="Contato">
+        <div class="gridcontainer">
+            <label for ="nome"><b>Nome:</b></label>
+            <input type="text" name ="nome" id="nome" placeholder="digite seu nome" required/>
+            <label for ="email"><b>Email:</b></label>
+            <input type="email"name ="email" id="email" placeholder="digite seu email" required/>
+            <label for="assunto"><b>Assunto:</b></label>
+            <input type="text" name="assunto" id="assunto" placeholder="digite o assunto" required/>
+            <label for = "mensagem"><b>Mensagem:</b></label>
+            <textarea class="menssagem" placeholder="Digite sua mensagem aqui"></textarea>
+            <input type="submit" name="enviar" id="btn-submit" onclick="botaoenviar()">
+        </div>
+    </div>
+    <!--Chamando o JS externo-->
+    <script src="/src/js/script.js"></script>
 </body>
 </html>
