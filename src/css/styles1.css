@@ -4,6 +4,14 @@ body {
     color: #333;
   }
   
+  .card img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* .card-body {
+    padding: 1rem; /* Reduz o espaçamento interno do card
+} */
   .navbar {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   }
