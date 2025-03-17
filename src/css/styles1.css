@@ -24,6 +24,12 @@ body {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   }
   
+  /* Header */
+
+  header #logo-header{
+    width: 5%;  /*Mudando tamanho da logo para a nova header*/
+}
+  /* fim header */
   h2 {
     margin-bottom: 20px;
     font-size: 24px;
