@@ -1,5 +1,7 @@
 # 🌿 **EcoTrend** 🌿
 
+- Link GitHub Pages: https://matheus-eiki.github.io/CP4-Front-End/
+
 ## 👨‍🏫 **Professor:**
 - Lucas Silva de Souza
 
