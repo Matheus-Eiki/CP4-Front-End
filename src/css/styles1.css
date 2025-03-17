@@ -51,7 +51,7 @@ body {
   }
   
   
-  .produto.desconto .price {
+  .price s{
     color: red;
     font-weight: bold;
   }

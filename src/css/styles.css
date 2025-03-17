@@ -75,6 +75,14 @@ header #carrinho{
 
 #valor-produto{
     margin-top: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #388e3c;
+}
+
+.preco-antigo {
+    color: red;
+    text-decoration: line-through; /* Adiciona o risco visual */
 }
 
 
@@ -85,7 +93,7 @@ header #carrinho{
     display: flex;
     justify-content: space-around;
     background-color: var(--mid-color);
-    padding-top: px;
+    /* padding-top: px; */
 }
 
 .rodape a{
@@ -107,5 +115,5 @@ header #carrinho{
 }
 
 .c-left, .c-right{
-    margin-top: 10%;
+    margin-top: 5%;
 }
