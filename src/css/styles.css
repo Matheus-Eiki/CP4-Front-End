@@ -1,0 +1,119 @@
+/*reset css*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none !important;
+}
+
+/*criando variáveis para as cores*/
+:root{
+    --bg-color: #DAD7CD;
+    --dark-color: #344E41;
+    --mid-color: #A3B18A;
+    --green-light: #588157;
+    --dark-green: #3A5A40;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+
+/*header*/
+header #logo-header{
+    width: 5%;  /*Mudando tamanho da logo para a nova header*/
+}
+
+header nav{
+    background-color: var(--mid-color);
+}
+
+header #carrinho{
+    width: 30px;
+    height: auto;
+}
+
+.navbar-nav .nav-item{
+    margin-right: 6rem;
+}
+
+.navbar-nav .nav-link{
+    white-space: nowrap; /*evitando quebra de linha*/
+}
+
+.efeitolink{
+    color: var(--dark-green) !important;
+    font-weight: 400;
+    border-bottom: 3px solid transparent var(--green-light);    
+}
+
+.efeitolink:hover, .efeitolink.a{
+    border-bottom: 3px solid var(--dark-green);
+    transition: all 0.1s ease;
+}
+
+
+/*card produto*/
+.c-card-produto{
+    display: flex;
+    padding: 50px;
+}
+
+.card-produto{
+    text-align: center;
+    padding: 20px;
+}
+
+#prod1{
+    width: 40%;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+#valor-produto{
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #388e3c;
+}
+
+.preco-antigo {
+    color: red;
+    text-decoration: line-through; /* Adiciona o risco visual */
+}
+
+
+
+
+/*rodape*/
+.rodape{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--mid-color);
+    /* padding-top: px; */
+}
+
+.rodape a{
+    color: var(--green-light);
+    transition: all 0.5s ease;
+}
+
+.rodape a:hover{
+    color: var(--dark-green);
+}
+
+.rodape h4{
+    color: var(--bg-color);
+}
+
+.rodape img{
+    margin-right: 10px;
+    width: 20px;
+}
+
+.c-left, .c-right{
+    margin-top: 5%;
+}
