@@ -117,3 +117,16 @@ header #carrinho{
 .c-left, .c-right{
     margin-top: 5%;
 }
+
+/* Inicio da unificação dos CSS */
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #388e3c;
+  }
+  
+  
+  .price s{
+    color: red;
+    font-weight: bold;
+  }

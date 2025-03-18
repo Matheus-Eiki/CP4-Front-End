@@ -50,12 +50,20 @@ body {
     text-align: center;
   }
   
+  /*Início CSS style.css */
+  #valor-produto{
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #388e3c;
+}
+  /*FIM CSS style.css */
+  
   .price {
     font-size: 18px;
     font-weight: bold;
     color: #388e3c;
   }
-  
   
   .price s{
     color: red;
