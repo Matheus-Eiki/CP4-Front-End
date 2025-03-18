@@ -12,14 +12,15 @@ body {
   --dark-green: #3A5A40;
 }
   
-  .card img {
+  /* .card img {
     max-width: 100%;
     height: auto;
-}
+} */
 
 /* .card-body {
     padding: 1rem; /* Reduz o espaçamento interno do card
 } */
+
   .navbar {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   }
@@ -30,12 +31,12 @@ body {
     width: 5%;  /*Mudando tamanho da logo para a nova header*/
 }
   /* fim header */
-  h2 {
+  /* h2 {
     margin-bottom: 20px;
     font-size: 24px;
     font-weight: bold;
     color: #2e7d32;
-  }
+  } */
   
   .card {
     border: none;
@@ -64,7 +65,7 @@ body {
     font-weight: bold;
     color: #388e3c;
   }
-  
+
   .price s{
     color: red;
     font-weight: bold;
