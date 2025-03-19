@@ -150,3 +150,8 @@ header #carrinho{
   }
 
 /* Fim animação */
+
+#form {
+    text-align: left;
+    /* background-color: #f4f4f4; */
+}
