@@ -139,6 +139,23 @@ header #carrinho{
     
 }
 
+/* Cards HOME e categorias */
+    /* Animação no card ao passar o cursor */
+#animacaocard:hover {
+    transform: scale(1.05);
+  }
+
+  .card {
+    border: none;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.card-body {
+    text-align: center;
+  }
+
+/* Fim Cards */
+
 /*rodape*/
 .rodape{
     display: flex;
@@ -181,21 +198,6 @@ header #carrinho{
     color: red;
     font-weight: bold;
   }
-
-/* Animação no card ao passar o cursor */
-#animacaocard:hover {
-    transform: scale(1.05);
-  }
-
-  .card {
-    border: none;
-    transition: transform 0.3s ease-in-out;
-}
-.card-body {
-    text-align: center;
-  }
-
-/* Fim animação */
 
 #form {
     text-align: left;
