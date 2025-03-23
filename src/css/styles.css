@@ -21,6 +21,10 @@ body{
     background-color: var(--bg-color);
 }
 
+.home {
+    background:var(--bg-color);
+}
+
 
 /*header*/
 
@@ -90,7 +94,19 @@ header #carrinho{
     text-decoration: line-through; /* Adiciona o risco visual */
 }
 
+/* botões home index.html*/
+ .btn-customizado{
+    background: var(--green-light);
+    color: var(--bg-color);
+    transition: 0.3s ease-in-out ;
+ }
 
+ .btn-customizado:hover {
+    background: var(--dark-color);
+    color: var(--bg-color);
+    text-shadow: var(--mid-color);
+    transform: scale(1.05);
+ }
 
 
 /*rodape*/
