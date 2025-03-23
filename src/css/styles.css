@@ -14,6 +14,7 @@
     --dark-color: #344E41;
     --mid-color: #A3B18A;
     --green-light: #588157;
+    --green-shine: #1c831a;
     --dark-green: #3A5A40;
 }
 
@@ -95,6 +96,7 @@ header #carrinho{
 }
 
 /* botões home index.html*/
+    /* Cards */
  .btn-customizado{
     background: var(--green-light);
     color: var(--bg-color);
@@ -108,6 +110,34 @@ header #carrinho{
     transform: scale(1.05);
  }
 
+    /* Carousel - 2 ofertas*/
+.btn-oferta {
+    background-color: var(--dark-green);
+    color: aliceblue;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+.btn-oferta:hover{
+    background-color: var(--green-shine);
+    color: aliceblue;
+    text-decoration-line: overline;
+    transform: scale(1.05);
+}
+
+    /* Carousel - 3 ver mais */
+.btn-sobre{
+    background: var(--bg-color);
+    color: var(--dark-green);
+    transition: 0.3s;
+}
+
+.btn-sobre:hover {
+    background: var(--bg-color);
+    transform: scale(1.05);
+    color: var(--dark-green);
+    
+}
 
 /*rodape*/
 .rodape{
