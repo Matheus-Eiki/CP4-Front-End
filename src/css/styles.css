@@ -14,6 +14,7 @@
     --dark-color: #344E41;
     --mid-color: #A3B18A;
     --green-light: #588157;
+    --green-shine: #1c831a;
     --dark-green: #3A5A40;
 }
 
@@ -21,8 +22,17 @@ body{
     background-color: var(--bg-color);
 }
 
+.home {
+    background:var(--bg-color);
+}
+
 
 /*header*/
+
+.navbar {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
 header #logo-header{
     width: 5%;  /*Mudando tamanho da logo para a nova header*/
 }
@@ -85,8 +95,66 @@ header #carrinho{
     text-decoration: line-through; /* Adiciona o risco visual */
 }
 
+/* botões home index.html*/
+    /* Cards */
+ .btn-customizado{
+    background: var(--green-light);
+    color: var(--bg-color);
+    transition: 0.3s ease-in-out ;
+ }
 
+ .btn-customizado:hover {
+    background: var(--dark-color);
+    color: var(--bg-color);
+    text-shadow: var(--mid-color);
+    transform: scale(1.05);
+ }
 
+    /* Carousel - 2 ofertas*/
+.btn-oferta {
+    background-color: var(--dark-green);
+    color: aliceblue;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+.btn-oferta:hover{
+    background-color: var(--green-shine);
+    color: aliceblue;
+    text-decoration-line: overline;
+    transform: scale(1.05);
+}
+
+    /* Carousel - 3 ver mais */
+.btn-sobre{
+    background: var(--bg-color);
+    color: var(--dark-green);
+    transition: 0.3s;
+}
+
+.btn-sobre:hover {
+    background: var(--bg-color);
+    transform: scale(1.05);
+    color: var(--dark-green);
+    
+}
+
+/* Cards HOME e categorias */
+    /* Animação no card ao passar o cursor */
+#animacaocard:hover {
+    transform: scale(1.05);
+  }
+
+  .card {
+    border: none;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.card-body {
+    text-align: center;
+  }
+
+/* Fim Cards */
 
 /*rodape*/
 .rodape{
@@ -116,4 +184,22 @@ header #carrinho{
 
 .c-left, .c-right{
     margin-top: 5%;
+}
+
+/* Inicio da unificação dos CSS */
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #388e3c;
+  }
+  
+  
+  .price s{
+    color: red;
+    font-weight: bold;
+  }
+
+#form {
+    text-align: left;
+    /* background-color: #f4f4f4; */
 }
